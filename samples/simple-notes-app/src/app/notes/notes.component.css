@@ -1,0 +1,38 @@
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .note-input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .notes-list {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 1rem;
+  }
+  
+  .note-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  mat-list-item {
+    padding: 0.5rem 0;
+  }
+  
+  button {
+    margin-top: 1rem;
+  }
+  

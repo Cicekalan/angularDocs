@@ -1,0 +1,23 @@
+<div class="notes-container">
+    <h2>Notes</h2>
+  
+    <mat-form-field appearance="fill" class="note-input">
+      <mat-label>Add a new note</mat-label>
+      <input matInput [(ngModel)]="noteContent" placeholder="Write your note here" />
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" (click)="addNote()">Add</button>
+  
+    <mat-list *ngIf="notes.length > 0" class="notes-list">
+      <mat-list-item *ngFor="let note of notes">
+        <div class="note-item-content">
+          {{ note.content }}
+          <button mat-icon-button color="warn" (click)="deleteNote(note.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </mat-list-item>
+    </mat-list>
+  
+    <p *ngIf="notes.length === 0">No notes added yet.</p>
+</div>
