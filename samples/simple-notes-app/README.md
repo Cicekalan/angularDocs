@@ -41,7 +41,7 @@ ng serve --port 4300
 ``````
 Screenshot
 Here is a screenshot of the application's user interface:
-![Project Screenshot](samples/simple-notes-app/screenshots/angular-note-app.png)
+![Project Screenshot](screenshots/angular-note-app.png)
 
 
 
